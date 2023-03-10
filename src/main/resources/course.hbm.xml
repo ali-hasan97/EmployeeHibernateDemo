@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- com.genspark.HibernateDemoApplication.Entity.Employee
+       is the name of the java class
+        tbl_employees is the name of the table -->
+    <class name="com.genspark.HibernateDemoApplication.Entity.Employee" table="tbl_employees">
+        <id name="employeeID">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="name" />
+        <property name="department" />
+    </class>
+</hibernate-mapping>
